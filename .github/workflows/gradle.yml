@@ -28,6 +28,8 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
+    - name: Changing Permissions
+      run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew assemble
     - name: Build with Unit Tests
